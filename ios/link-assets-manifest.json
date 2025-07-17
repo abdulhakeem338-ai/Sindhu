@@ -1,0 +1,41 @@
+{
+  "migIndex": 1,
+  "data": [
+    {
+      "path": "src/assets/fonts/SF Pro Rounded Bold.ttf",
+      "sha1": "ff61a8eb119864c0800f424fa3223aa815426523"
+    },
+    {
+      "path": "src/assets/fonts/SF Pro Rounded Extra Bold.ttf",
+      "sha1": "b116081850f9820eed953b981d88e8cca79fc97d"
+    },
+    {
+      "path": "src/assets/fonts/SF Pro Rounded Heavy.ttf",
+      "sha1": "98361242928114e4734d4547d6153fb2abbf6599"
+    },
+    {
+      "path": "src/assets/fonts/SF Pro Rounded Light.ttf",
+      "sha1": "e481525695d2c7880bba2bbfc93b8b5e0edcf354"
+    },
+    {
+      "path": "src/assets/fonts/SF Pro Rounded Medium.ttf",
+      "sha1": "828f7c11634174da37d94f57334989905f6e1f74"
+    },
+    {
+      "path": "src/assets/fonts/SF Pro Rounded Regular.ttf",
+      "sha1": "f2060ab5a5d6140c103bf47616f882ae62539cf2"
+    },
+    {
+      "path": "src/assets/fonts/SF Pro Rounded Semibold.ttf",
+      "sha1": "543ab6e5c840d17d63bfc8eb4233c05a049b683e"
+    },
+    {
+      "path": "src/assets/fonts/SF Pro Rounded Thin.ttf",
+      "sha1": "cd689cde14e0d94c025ca9415f03cccd28ec25f0"
+    },
+    {
+      "path": "src/assets/fonts/SF Pro Rounded Ultralight.ttf",
+      "sha1": "670a8cbe9e06bebe7c4d5a363eb64036c761c12d"
+    }
+  ]
+}

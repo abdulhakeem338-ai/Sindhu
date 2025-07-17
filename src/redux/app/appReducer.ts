@@ -17,6 +17,8 @@ const appReducer = (state = initialState, action: PayloadAction<any>) => {
       return { ...state, user: action.payload };
     case ACTIONS.APP.SET_TOKEN:
       return { ...state, token: action.payload };
+    case ACTIONS.APP.SET_LOGOUT:
+      return { ...state, user: null, token: null };
     default:
       return state;
   }

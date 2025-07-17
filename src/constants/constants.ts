@@ -167,6 +167,7 @@ const ACTIONS = {
   APP: {
     SET_USER: 'set_user',
     SET_TOKEN: 'set_token',
+    SET_LOGOUT: 'set_logout',
   },
   CACHE: {
     GET_DEVICES_INFO: 'get_devices_info',

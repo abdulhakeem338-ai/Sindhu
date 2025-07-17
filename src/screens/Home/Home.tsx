@@ -13,8 +13,11 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 import { COLORS, FONTS, FONT_SIZES, SPACING, BORDER_RADIUS, GRADIENT } from '../../constants/constants';
 import { Responsive, ResponsiveConstants } from '../../helper/responsive';
 import { ScreenProps } from '../../navigations/types';
+import { setLogout } from '../../redux/app/appAction';
+import { useAppDispatch } from '../../redux/hooks';
 
 const Home: React.FC<ScreenProps> = ({ navigation }) => {
+  const dispatch = useAppDispatch();
   const handleLogout = () => {
     Alert.alert(
       'Logout',

@@ -9,20 +9,26 @@ import Login from '../screens/Authentication/Login';
 import Signup from '../screens/Authentication/Signup';
 import Home from '../screens/Home/Home';
 import { COLORS, CONFIG } from '../constants/constants';
+import { useAppSelector } from '../redux/hooks';
 
 // Create the stack navigator
 const Stack = createStackNavigator();
 
 const StackNavigator = () => {
+  const user = useAppSelector((state) => state.appState.user);
+  const token = useAppSelector((state) => state.appState.token);
+  const isAuthenticated = !!(user && token);
+  console.log(isAuthenticated);
   return (
+
     <NavigationContainer>
       <StatusBar barStyle="light-content" backgroundColor={COLORS.background} />
-      <Stack.Navigator
-        initialRouteName="Welcome"
+      <Stack.Navigator      
+        initialRouteName={isAuthenticated ? 'Home' : 'Welcome'}
         screenOptions={{
           headerShown: false,
           cardStyle: { backgroundColor: COLORS.background },
-          cardStyleInterpolator: ({ current, layouts }) => {
+          cardStyleInterpolator: ({ current, layouts }) => {  
             return {
               cardStyle: {
                 transform: [

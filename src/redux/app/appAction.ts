@@ -14,4 +14,11 @@ const setToken = (data: string | null) => {
   };
 };
 
-export { setUser, setToken }; 
+const setLogout = () => {
+  return {
+    type: ACTIONS.APP.SET_LOGOUT,
+    payload: null,
+  };
+};
+
+export { setUser, setToken, setLogout }; 

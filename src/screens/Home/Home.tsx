@@ -68,24 +68,7 @@ const Home: React.FC<ScreenProps> = ({ navigation }) => {
           </Text>
         </View>
 
-        <View style={styles.featuresContainer}>
-          <Text style={styles.sectionTitle}>What's Next?</Text>
-          
-          <View style={styles.featureItem}>
-            <Icon name="rocket" size={Responsive.moderateScale(24)} color={COLORS.primary} />
-            <Text style={styles.featureText}>Build your main app features</Text>
-          </View>
-          
-          <View style={styles.featureItem}>
-            <Icon name="settings" size={Responsive.moderateScale(24)} color={COLORS.primary} />
-            <Text style={styles.featureText}>Configure your app settings</Text>
-          </View>
-          
-          <View style={styles.featureItem}>
-            <Icon name="people" size={Responsive.moderateScale(24)} color={COLORS.primary} />
-            <Text style={styles.featureText}>Add user profile management</Text>
-          </View>
-        </View>
+       
       </View>
     </SafeAreaView>
   );

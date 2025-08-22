@@ -4,11 +4,11 @@ let API_TIMEOUT: number;
 
 try {
   const env = require('@env');
-  BASE_URL = env.API_BASE_URL || 'http://192.168.1.31:3000';
+  BASE_URL = env.API_BASE_URL || 'http://192.168.1.29:3000';
   API_TIMEOUT = parseInt(env.API_TIMEOUT || '10000', 10);
 } catch (error) {
   // Fallback values when @env is not available
-  BASE_URL = 'http://192.168.1.31:3000';
+  BASE_URL = 'http://192.168.1.29:3000';
   API_TIMEOUT = 10000;
   console.warn('Environment variables not found, using default values. Make sure to create a .env file.');
 }
